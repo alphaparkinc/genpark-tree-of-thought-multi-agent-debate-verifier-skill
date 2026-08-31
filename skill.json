@@ -1,0 +1,38 @@
+{
+  "name": "genpark-tree-of-thought-multi-agent-debate-verifier-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Tree-of-thought multi-agent debate verifier synthesizing multi-perspective refutations to reach verifiable epistemic consensus.",
+  "author": "genpark",
+  "category": "reasoning-debate",
+  "tags": [
+    "tree-of-thought",
+    "multi-agent-debate",
+    "epistemic-consensus",
+    "refutation-tree",
+    "formal-logic"
+  ],
+  "inputs": {
+    "controversial_proposition": {
+      "type": "string"
+    },
+    "debaters_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "debate_session_id": {
+      "type": "string"
+    },
+    "tree_depth_explored": {
+      "type": "integer"
+    },
+    "epistemic_consensus_score_pct": {
+      "type": "number"
+    },
+    "debate_graph_transcript_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
